@@ -1,6 +1,6 @@
 {
   "name": "react-google-map-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react-google-map-image",
   "main": "lib/ReactGoogleMapImage.js",
   "author": "Adebiyi Bodunde",

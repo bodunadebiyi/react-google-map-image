@@ -1,6 +1,5 @@
 # react-google-map-image
-
-__COMPONENT DESCRIPTION GOES HERE__
+This is a simple react component that displays the image of a google map location.
 
 
 ## Demo & Examples
@@ -29,33 +28,45 @@ npm install react-google-map-image --save
 
 
 ## Usage
+This component is super easy to you
 
-__EXPLAIN USAGE HERE__
+```js
+// Using ES5
+var ReactGoogleMapImage = require('react-google-map-image'); 
 
-```
-var ReactGoogleMapImage = require('react-google-map-image');
+// Using ES6
+import ReactGoogleMapImage from 'react-google-map-image';
 
-<ReactGoogleMapImage>Example</ReactGoogleMapImage>
+// Example Usage
+const googleMapApiConfig = { 
+	center: '32 wulemotu ajoke street akoka', 
+	size: '500x240', 
+	zoom: '15',
+	key: {{ google-api-key }}, 
+	mapType: 'roadmap'
+}
+<ReactGoogleMapImage 
+    config={googleMapApiConfig}
+    wrapperStyle={{ width: '100%' }}
+    style={{ width: '100px', height: 'auto', border: '1px solid #ccc'}}
+/>
 ```
 
 ### Properties
+###### config
+This component makes use of google's Static Map API, this prop object contains the parameters used to configure this component. The full list of parameters can be found [here](https://developers.google.com/maps/documentation/static-maps/intro) on the google's static map page.
 
-* __DOCUMENT PROPERTIES HERE__
+###### wrapperStyle
+This prop is a style object used to customize the wrapper-div covering the image.
 
-### Notes
-
-__ADDITIONAL USAGE NOTES__
-
+###### style
+This prop is a style object used to customize the map image.
 
 ## Development (`src`, `lib` and the build process)
 
 **NOTE:** The source code for the component is in `src`. A transpiled CommonJS version (generated with Babel) is available in `lib` for use with node.js, browserify and webpack. A UMD bundle is also built to `dist`, which can be included without the need for any build system.
 
 To build, watch and serve the examples (which will also watch the component source), run `npm start`. If you just want to watch changes to `src` and rebuild `lib`, run `npm run watch` (this is useful if you are working with `npm link`).
-
-## License
-
-__PUT LICENSE HERE__
 
 Copyright (c) 2017 Adebiyi Bodunde.
 
