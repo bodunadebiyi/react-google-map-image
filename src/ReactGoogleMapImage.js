@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class GoogleMapImage extends Component {
     constructor(props, context) {
@@ -39,11 +40,11 @@ class GoogleMapImage extends Component {
 }
 
 GoogleMapImage.propTypes = {
-    config: React.PropTypes.shape({
-        center: React.PropTypes.string.isRequired,
-        size: React.PropTypes.string.isRequired,
-        zoom: React.PropTypes.string.isRequired,
-        key: React.PropTypes.string.isRequired
+    config: PropTypes.shape({
+        center: PropTypes.string.isRequired,
+        size: PropTypes.string.isRequired,
+        zoom: PropTypes.string.isRequired,
+        key: PropTypes.string.isRequired
     }).isRequired
 };
 

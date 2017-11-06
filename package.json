@@ -1,6 +1,6 @@
 {
   "name": "react-google-map-image",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "react-google-map-image",
   "main": "lib/ReactGoogleMapImage.js",
   "author": "Adebiyi Bodunde",
@@ -13,7 +13,8 @@
     "url": "https://github.com/bodunadebiyi/react-google-map-image/issues"
   },
   "dependencies": {
-    "classnames": "^2.1.2"
+    "classnames": "^2.1.2",
+    "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.3",

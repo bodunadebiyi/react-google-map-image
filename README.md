@@ -43,7 +43,7 @@ const googleMapApiConfig = {
 	size: '500x240', 
 	zoom: '15',
 	key: {{ google-api-key }}, 
-	mapType: 'roadmap'
+	maptype: 'roadmap'
 }
 <ReactGoogleMapImage 
     config={googleMapApiConfig}
